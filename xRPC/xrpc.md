@@ -27,7 +27,10 @@ Enquanto que um exemplo prático de chamada de subrotina entre um cliente e um s
   <figcaption >Figura 2: Visão macro comunicação RPC cliente-servidor.</figcaption>
 </figure>
 
+### Passos no RPC
 
+-1 : registro - servidor "registra" o procedimento, tipo de parâmetro, localização a ser armazenada os métodos.
+0  : bind
 
 ### gRPC 
 
