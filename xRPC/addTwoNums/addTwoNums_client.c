@@ -3,9 +3,9 @@
  * These are only templates and you can use them
  * as a guideline for developing your own functions.
  */
+#include <stdio.h>
 #include <stdlib.h>
 #include "addTwoNums.h"
-#include <stdio.h>
 
  
 int addTwoNumsfunc(CLIENT *clnt, int a, int b){
@@ -52,7 +52,7 @@ int main (int argc, char *argv[]){
     
     printf("%d + %d = %d\n", a, b, addTwoNumsfunc(clnt,a,b));
     
+    clnt_destroy(clnt);
     return(0);
-
 }
  

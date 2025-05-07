@@ -27,6 +27,22 @@ Enquanto que um exemplo prático de chamada de subrotina entre um cliente e um s
   <figcaption >Figura 2: Visão macro comunicação RPC cliente-servidor.</figcaption>
 </figure>
 
+
+
+#### Como compilar o xRPC
+
+
+```bash
+rpcgen -a nomeDaInterfaceRPC.x
+
+
+gcc -o nomeObjeto nome_servidor.c nome_servidor_srv.c nome_xrpc.c -ltirpc
+
+gcc -o nomeObjeto nome_cliente.c nome_cliente_clnt.c nome_xrpc.c -lnsl
+
+
+```
+
 ### Passos no RPC
 
 -1 : registro - servidor "registra" o procedimento, tipo de parâmetro, localização a ser armazenada os métodos.
@@ -36,3 +52,14 @@ Enquanto que um exemplo prático de chamada de subrotina entre um cliente e um s
 
 É uma estrutura de comunicação, que **permite a troca de dados**, entre serviços, aplicativos e dispositivos.
 (**gRPC**)
+
+
+
+
+
+### Daemon
+
+processo que roda em background 
+não atua direto no processo
+chama outro processo para atuar com ele
+não possui terminal
