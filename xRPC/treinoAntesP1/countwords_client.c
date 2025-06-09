@@ -59,7 +59,7 @@ void adicionaPalavra(CLIENT *clnt){
 void imprimirDicionario(CLIENT *clnt){
 
 
-	imprime_1()
+	imprime_1();
 
 }
 

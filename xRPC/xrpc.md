@@ -45,7 +45,7 @@ gcc -o nomeObjeto nome_cliente.c nome_cliente_clnt.c nome_xrpc.c -lnsl
 
 ### Passos no RPC
 
--1 : registro - servidor "registra" o procedimento, tipo de parâmetro, localização a ser armazenada os métodos.
+- 1 : registro - servidor "registra" o procedimento, tipo de parâmetro, localização a ser armazenada os métodos.
 0  : bind
 
 ### gRPC 
